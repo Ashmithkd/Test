@@ -75,7 +75,7 @@ public class QuestionServiceImpl implements QuestionService{
 
         if(!file.isEmpty()){
             newQuestion.setPhoto(file.getOriginalFilename());
-            File file1 = new ClassPathResource("static/css/image").getFile();
+            File file1 = new ClassPathResource("target/classes/static/css/image").getFile();
 
             Path path = Paths.get(file1.getAbsolutePath() + File.separator + file.getOriginalFilename());//create a path
             Files.copy(file.getInputStream(),path, StandardCopyOption.REPLACE_EXISTING);
