@@ -16,10 +16,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 import java.io.File;
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.nio.file.StandardCopyOption;
+import java.nio.file.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -171,11 +168,13 @@ public class UserServiceImpl implements UserService {
         if(retrievedUser.isPresent()) {
             User user = retrievedUser.get();
             if (!file.isEmpty()) {
-                System.out.println("not empty");
-                user.setPhoto(file.getOriginalFilename());
-                File file1 = new ClassPathResource("static/css/image").getFile();
+                String filePath = "src/main/resources/static/css/image/" + file.getOriginalFilename();
 
-                Path path = Paths.get(file1.getAbsolutePath() + File.separator + file.getOriginalFilename());//create a path
+                // Create a Path object
+                Path path = FileSystems.getDefault().getPath(filePath);
+                System.out.println(path);
+
+                // Copy the file content to the specified path
                 Files.copy(file.getInputStream(), path, StandardCopyOption.REPLACE_EXISTING);
                 userRepository.save(user);
             }
