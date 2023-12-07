@@ -1,0 +1,370 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.container{
+    min-height: 100vh;
+    width: 100%;
+}
+#logout{
+background-color:orange;
+color:black;
+padding: 0.5rem 1rem;
+font-weight:bold;
+font-size: 1rem;
+border-radius: 12%;
+box-shadow: 3px 3px 2px 0px rgba(154, 153, 152, 1);
+}
+
+#logout:hover{
+background-color:#FF8C00;
+}
+#navbar{
+     border: none;
+         border-bottom: 1px solid black;
+         display: flex;
+         justify-content: center;
+         gap: 1vw;
+         padding: 1.5vh;
+         font-size: 1.2rem;
+         align-items: center;
+         position: fixed;
+         z-index: 2;
+         background-color: white;
+         width: 100vw;
+}
+
+.items{
+    display: flex;
+    gap: 1vw;
+}
+
+.content{
+    padding: 2vh 2vw;
+    background-color: rgb(231, 231, 231);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#search_bar{
+    width: 20vw;
+    padding:1vh 2vw;
+    border-radius: 10px;
+}
+
+#heading{
+    font-size: 2rem;
+    margin-bottom: 2.3vh;
+}
+
+#title {
+    padding: 0px;
+    margin-left: -10px;
+    margin-right: 100px;
+}
+
+.icons{
+    color: black;
+}
+
+#login-logout {
+    position: fixed;
+    right: 50px;
+}
+
+#login-logout a {
+    padding: 0px 20px;
+}
+#logout{
+background-color:orange;
+color=grey;
+padding: 0.5rem 1rem;
+font-weight:bold;
+font-size: 1rem;
+border-radius: 12%;
+box-shadow: 3px 3px 2px 0px rgba(154, 153, 152, 1);
+}
+
+#logout:hover{
+background-color:#FF8C00;
+}
+
+.search {
+    position: relative;
+    display: inline-block;
+}
+
+#search_bar {
+    padding-left: 34px;
+}
+
+.search_icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+     font-size: 24px;
+}
+/*<-------- navbar ------------>*/
+
+#body {
+    display: flex;
+    flex-direction: column;
+    border-left: 2px solid rgba(0, 0, 0, 0.54);
+    padding-left: 10px;
+    padding-top: 40px;
+    overflow-y: scroll;
+    height: 92vh;
+}
+
+#main-question {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    font-size: x-large;
+}
+
+.question-detail {
+    display: grid;
+    grid-template-columns: 5% 90%;
+    font-size: x-large;
+}
+
+#question{
+    display: grid;
+    grid-template-columns: 75% 15% 10%;
+}
+
+.answer-content {
+    display: grid;
+    grid-template-column: 10% 90%;
+}
+
+.answer-author {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.voting-button {
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    border-radius: 100%;
+    cursor: pointer;
+    padding: 20% 50% 20% 50%;
+    margin: 0% -150%;
+    color: black;
+    text-decoration: none;
+}
+
+.accepted-answer {
+    cursor: pointer;
+    margin: 20px 0% 0% 0px;
+    color: green;
+    text-decoration: none;
+    padding-right: 12px;
+    transform: scale(150%);
+}
+
+.accepted-answer i:hover {
+    background-color: #F0BF4C;
+    border-radius: 100%;
+}
+
+.voting-count {
+    text-align: center;
+    width: 100%;
+}
+
+.voting-button:hover {
+    background-color: #F0BF4C;
+}
+
+#parent {
+    display: grid;
+    grid-template-columns: 13% 65% 20%;
+    padding-top: 60px;
+}
+
+#ask-question {
+    height: 40px;
+    margin-top: 10px;
+}
+
+.voting {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    min-height: 100px;
+    padding-top: 20px;
+    gap: 10px;
+}
+
+input[type = "submit"] {
+    background-color: rgb(27, 117, 208);
+    cursor: pointer;
+    color: white;
+    height: 40px;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.content-body {
+    padding-left: 50px;
+    padding-top: 30px;
+    margin-bottom: 30px;
+}
+
+.question-content {
+    font-size: 2rem;
+}
+
+.comment {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width:80%;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.tags {
+    background-color: lightblue;
+
+    font-size: medium;
+    margin-right: 20px;
+    padding: 8px;
+    border-radius: 5px;
+    cursor:pointer;
+    color:black
+}
+.tags:hover{
+         background-color:rgb(4, 95, 126);
+}
+
+#view-detail {
+    font-size: medium;
+}
+
+.answer-action {
+    text-decoration: none;
+    color: rgb(0,0,0,0.5);
+    cursor: pointer;
+    font-size: medium;
+    padding-right: 30px;
+}
+
+::-webkit-scrollbar {
+    width: 1px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(0,0,0,0.1);
+    border-radius: 1px;
+}
+
+.bookmark i{
+    color: black;
+    font-size: 2rem;
+    /* margin-right:6vw; */
+    margin-left: 2vw;
+    /* margin-top: 2vh; */
+    /* float: right; */
+}
+
+pre {
+    font-size: small;
+}
+
+/*-----------Side Bar starts here -----------------*/
+
+#sidebar{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    font-size:1.4rem;
+    padding-top: 20px;
+    padding-right: 0px;
+}
+
+#sidebar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-top: 20px;
+}
+
+.side-text {
+    color: rgb(0,0,0,0.5);
+}
+
+.active-bar {
+    background-color: rgb(0,0,0,0.1);
+    border-radius: 10px 0px 0px 10px;
+}
+
+.active {
+    color: black;
+}
+
+.side_icons{
+    margin-bottom:0.8rem;
+    margin-right: 0.5rem;
+}
+
+.row{
+    cursor: pointer;
+    display: flex;
+    font-size: 20px;
+}
+
+.row a{
+    color: rgb(0,0,0,0.5);
+    text-decoration: none;
+    padding: 10px 10px 0px 10px;
+}
+
+.active-bar a {
+    color: black;
+}
+
+.row:hover{
+    background-color: rgb(0,0,0,0.07);
+    border-radius: 10px 0px 0px 10px;
+}
+
+.add_image{
+    margin-top:2vh;
+}
+
+#main-container {
+        text-align: center;
+        margin-top:60px;
+}
+
+.section-container {
+
+        background-color: rgb(244, 210, 123);
+        padding: 10px;
+        margin: 12px;
+        border-radius: 8px;
+}
+
+h3 {
+        color: #daa520;
+}
+
+p {
+        color: #555;
+}
+.static-content {
+                background-color : rgb(250, 236, 198);
+                padding: 20px;
+                margin: 20px 0;
+                border-radius: 8px;
+}

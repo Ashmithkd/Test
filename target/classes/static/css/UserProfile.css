@@ -1,0 +1,393 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.container{
+    min-height: 100vh;
+    width: 100%;
+}
+#logout{
+background-color:orange;
+color=grey;
+padding: 0.5rem 1rem;
+font-weight:bold;
+font-size: 1rem;
+border-radius: 12%;
+box-shadow: 3px 3px 2px 0px rgba(154, 153, 152, 1);
+}
+
+#logout:hover{
+background-color:#FF8C00;
+}
+#navbar{
+    border: none;
+        border-bottom: 1px solid black;
+        display: flex;
+        justify-content: center;
+        gap: 1vw;
+        padding: 1.5vh;
+        font-size: 1.2rem;
+        align-items: center;
+        position: fixed;
+        z-index: 2;
+        background-color: white;
+        width: 100vw;
+}
+
+.search {
+    position: relative;
+    display: inline-block;
+}
+
+#search_bar {
+    padding-left: 34px;
+}
+
+.search_icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+     font-size: 24px;
+}
+.items{
+    display: flex;
+    gap: 1vw;
+}
+
+.content{
+    padding: 2vh 2vw;
+    background-color: rgb(231, 231, 231);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#search_bar{
+    width: 20vw;
+    padding:1vh 2vw;
+    border-radius: 10px;
+}
+
+#heading{
+    font-size: 2rem;
+    margin-bottom: 2.3vh;
+}
+
+#title {
+    padding: 0px;
+    margin-left: -10px;
+    margin-right: 100px;
+}
+
+.icons{
+    color: black;
+}
+
+/*-----------nav bar ends here -------------------*/
+
+#userContainer{
+    display:grid;
+    grid-template-rows:22% 10% 68%;
+    overflow-y: scroll;
+    height: 92vh;
+    border-left: 2px solid black;
+    padding: 30px 0px;
+}
+
+#parent {
+    display: grid;
+    grid-template-columns: 13% 75% 10%;
+    padding-top: 50px;
+}
+
+#userDetail{
+    display:grid;
+    grid-template-columns:20% 45% 34%
+}
+
+#profilePhoto{
+    grid-column:1;
+    padding-left:30%;
+    margin-top:0;
+}
+
+#profileName{
+    padding-top: 20px;
+    grid-column:2;
+}
+
+#editButtons a {
+    display: inline-block;
+    padding: 8px 10px;
+    margin-right: 20px;
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: small;
+}
+
+#editButtons a:hover {
+    background-color: rgb(0,0,0,0.1);
+}
+
+#name{
+    font-size:xx-large;
+}
+
+#memberSince{
+    margin-top:10%;
+}
+
+#menu{
+    grid-row:2;
+    margin-top:3%;
+    margin-left:5%;
+}
+
+ul#menuOptions li{
+    display:inline-block;
+}
+
+#menuOptions li {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius:4px;
+}
+
+.status-view {
+    margin-left: 50px;
+}
+
+.profile-heading{
+    font-size: 1.7rem;
+}
+
+#about{
+    grid-column:2;
+    margin:5%;
+    margin-top:0;
+}
+
+#userDetails{
+    margin-top:5%;
+    grid-row:3;
+    display:grid;
+    grid-template-columns: 25% 75%;
+}
+
+#statsBox{
+    display: grid;
+    grid-template-columns: auto auto;
+    font-size: 1.2rem;
+    border:1px solid black;
+    border-radius:8px;
+    width: 110%;
+}
+
+.contentBox{
+    width:100%;
+    border-radius:20px;
+    padding: 10px;
+    margin-bottom: 20px;
+    background: #F0F1F4;
+    text-align: center;
+}
+#userName {
+    font-size: xx-large;
+}
+
+#memberSince {
+    color: rgb(0,0,0,0.5);
+}
+
+.iconCake {
+    color: rgb(0,0,0,0.5);
+}
+
+.statusDetail {
+    display: flex;
+    flex-direction: column;
+    color: rgb(0,0,0,0.5);
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 0px  0px 20px 20px;
+    height: 100px;
+}
+
+::-webkit-scrollbar {
+    width: 1px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(0,0,0,0.1);
+    border-radius: 1px;
+}
+
+.pen {
+    padding-right: 15px;
+}
+
+#login-logout {
+    position: fixed;
+    right: 50px;
+}
+
+#login-logout a {
+    padding: 0px 20px;
+}
+.qs_box{
+    max-height:60vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+   overflow-y: scroll;
+   padding: 1vh;
+}
+
+.q_box{
+    display: flex;
+    flex-direction: column;
+    padding:2vh 1vw;
+    background-color:rgb(226, 226, 226);
+    color: black;
+    border-radius: 10px;
+    box-shadow: 3px 3px 2px 0px rgba(154, 153, 152, 1);
+}
+.q_lower{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2vh;
+}
+.q_left{
+    display: flex;
+    gap:1vw;
+}
+.q_title{
+    font-size:1.6rem;
+    cursor: pointer;
+}
+.q_content{
+    font-size: 1.1rem;
+}
+.fa-heart{
+    color: red;
+}
+.fa-eye{
+    color:rgb(42, 65, 165);
+}
+.fa-message{
+    color: rgb(58, 183, 224);
+}
+.fa-comment{
+    color:green;
+}
+.fa-pen-clip{
+    color: goldenrod;
+    margin-right: 0.3vw;
+}
+.q_title:hover{
+    color:blue;
+}
+.tick-accept{
+ color:green;
+}
+.tick_not_accept{
+color:red;
+}
+
+.author_box{
+    background-color: rgb(41, 41, 41);
+    border-radius: 1rem;
+    color: goldenrod;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    box-shadow: 3px 3px 2px 0px rgba(154, 153, 152, 1);
+}
+.author_box:hover{
+    background-color: goldenrod;
+    color:black;
+}
+.author_box:hover .fa-pen-clip{
+    color: black;
+}
+
+#logout{
+background-color:orange;
+color=grey;
+padding: 0.5rem 1rem;
+font-weight:bold;
+font-size: 1rem;
+border-radius: 12%;
+box-shadow: 3px 3px 2px 0px rgba(154, 153, 152, 1);
+}
+
+#logout:hover{
+background-color:#FF8C00;
+}
+
+
+/*-----------Side Bar starts here -----------------*/
+
+#sidebar{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    font-size:1.4rem;
+    padding-top: 20px;
+    padding-right: 0px;
+}
+
+#sidebar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-top: 20px;
+}
+
+.side-text {
+    color: rgb(0,0,0,0.5);
+}
+
+.active-bar {
+    background-color: rgb(0,0,0,0.1);
+    border-radius: 10px 0px 0px 10px;
+}
+
+.active {
+    color: black;
+}
+
+.side_icons{
+    margin-bottom:0.8rem;
+    margin-right: 0.5rem;
+}
+
+.row{
+    cursor: pointer;
+    display: flex;
+    font-size: 20px;
+}
+
+.row a{
+    color: rgb(0,0,0,0.5);
+    text-decoration: none;
+    padding: 10px 10px 0px 10px;
+}
+
+.active-bar a {
+    color: black;
+}
+
+.row:hover{
+    background-color: rgb(0,0,0,0.07);
+    border-radius: 10px 0px 0px 10px;
+}

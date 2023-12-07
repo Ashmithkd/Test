@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.container{
+    min-height: 100vh;
+    width: 100%;
+}
+#navbar{
+     border: none;
+         border-bottom: 1px solid black;
+         display: flex;
+         justify-content: center;
+         gap: 1vw;
+         padding: 1.5vh;
+         font-size: 1.2rem;
+         align-items: center;
+         position: fixed;
+         z-index: 2;
+         background-color: white;
+         width: 100vw;
+}
+#logout{
+background-color:orange;
+color=grey;
+padding: 0.5rem 1rem;
+font-weight:bold;
+font-size: 1rem;
+border-radius: 12%;
+box-shadow: 3px 3px 2px 0px rgba(154, 153, 152, 1);
+}
+
+#logout:hover{
+background-color:#FF8C00;
+}
+.items{
+    display: flex;
+    gap: 1vw;
+}
+
+.content{
+    padding: 2vh 2vw;
+    background-color: rgb(231, 231, 231);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#search_bar{
+    width: 20vw;
+    padding:1vh 2vw;
+    border-radius: 10px;
+}
+#heading{
+    font-size: 2rem;
+    margin-bottom: 2.3vh;
+}
+
+.title {
+    padding: 0px;
+    margin-left: -10px;
+    margin-right: 100px;
+}
+
+.icons{
+    color: black;
+}
+
+#login-logout {
+    position: fixed;
+    right: 50px;
+}
+
+#login-logout a {
+    padding: 0px 20px;
+}
+#logout{
+background-color:orange;
+color=grey;
+padding: 0.5rem 1rem;
+font-weight:bold;
+font-size: 1rem;
+border-radius: 12%;
+box-shadow: 3px 3px 2px 0px rgba(154, 153, 152, 1);
+}
+
+#logout:hover{
+background-color:#FF8C00;
+}
+
+/*<-------- navbar ------------>*/
+.search {
+    position: relative;
+    display: inline-block;
+}
+
+#search_bar {
+    padding-left: 34px;
+}
+
+.search_icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+     font-size: 24px;
+}
+.input_group{
+    background-color: white;
+    color: black;
+    margin-bottom: 1vh;
+    padding: 1.4vh 1vw;
+    width: 60vw;
+    border-radius: 10px;
+}
+.input_group h5{
+    font-size: 1.5rem;
+}
+.input_group p{
+    color: rgb(102, 100, 100);
+    margin-bottom:1.4vh;
+}
+.input_group input{
+    width:50vw;
+    padding: 1vh;
+}
+.input_group textarea{
+    width: 40vw;
+}
+.search{
+    position: relative;
+}
+.search_icon{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.buttons{
+    padding:1vh 2vw;
+    background-color:black;
+    color:gold;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:4vh;
+}
+#add_image{
+    margin-top:2vh;
+}
